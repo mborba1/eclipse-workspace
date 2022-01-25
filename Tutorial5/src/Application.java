@@ -26,19 +26,28 @@ public class Application {
 		//getting user input
 		//create scanner object
 		Scanner input = new Scanner(System.in);
+//		
+//		//output the prompt
+//		System.out.println("Enter a floating point value: ");
+//		
+//		//wait for the user to enter a new line of text
+//		//String line = input.nextLine();
+//		
+//		//wait for user input using integer
+//		//int value = input.nextInt();
+//		
+//		double value = input.nextDouble();
+//		
+//		//Tell them what they entered.
+//		System.out.println("You entered: " + value);
+		int value = 0;
+		do {
+			System.out.println("Enter a number: ");
+			value = input.nextInt();
+		}
+		while(value !=5);
 		
-		//output the prompt
-		System.out.println("Enter a floating point value: ");
+		System.out.println("Got 5!");
 		
-		//wait for the user to enter a new line of text
-		//String line = input.nextLine();
-		
-		//wait for user input using integer
-		//int value = input.nextInt();
-		
-		double value = input.nextDouble();
-		
-		//Tell them what they entered.
-		System.out.println("You entered: " + value);
 	}
 }
