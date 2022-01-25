@@ -14,5 +14,8 @@ public class Application {
 	   System.out.println(greeting);
 	   
 	   System.out.println("My integer is: " + myInt);
+	   
+	   System.out.println();
 	}
 }
+
