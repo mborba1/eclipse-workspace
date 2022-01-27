@@ -21,6 +21,12 @@ class Person {
 		
 		return yearsLeft;
 	}
+	int getAge() {
+		return age;
+	}
+	String getName() {
+		return name;
+	}
 }
 
 public class App {
@@ -34,16 +40,16 @@ public class App {
 		person1.speak();
 		//person1.sayHello();
 		int years = person1.calculateYeardToRetirement();	
+		int age = person1.getAge();
 		
-		System.out.println("Years till retirement " + years);
-		Person person2 = new Person();
-		person2.name = "Sarah Smith";
-		person2.age = 20;
-		person2.speak();
+//		Person person2 = new Person();
+//		person2.name = "Sarah Smith";
+//		person2.age = 20;
+//		person2.speak();
 		//person2.calculateYeardToRetirement();
 		
 		//System.out.println(person1.name);
-		
+		System.out.println("Name is: " + person1.getName());
 	}
 
 }
