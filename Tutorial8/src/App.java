@@ -37,7 +37,7 @@ public class App {
 		Person person1 = new Person();
 		person1.name = "Joe Bloggs";
 		person1.age = 37;
-		person1.speak();
+		//person1.speak();
 		//person1.sayHello();
 		int years = person1.calculateYeardToRetirement();	
 		int age = person1.getAge();
