@@ -1,9 +1,19 @@
 class Thing{
+	public final static int LUCKY_NUMBER = 7; //final is java version of constant, cannot be re-assigned
+	
 	public String name; //instance variables
 	public static String description; //class variables
 	
+	public static int count = 0;
+	
+	public int id;
+	public Thing() {
+		id = count;
+		count++;
+	}
+	
 	public void showName() { //instance method
-		System.out.println(description + ": " + name);
+		System.out.println("Object id: " + id + ", " + description + ": " + name);
 		
 	}
 	public static void showInfo() { //class method
@@ -21,8 +31,12 @@ public class App {
 		
 		Thing.showInfo();
 		
+		System.out.println("Before creating objects, count is: " + Thing.count);
+		
 		Thing thing1 = new Thing();
 		Thing thing2 = new Thing();
+		
+		System.out.println("After creating objects, count is: " + Thing.count);
 		
 		thing1.name = "Bob";
 		thing2.name = "Sue";
@@ -32,6 +46,9 @@ public class App {
 		
 //		System.out.println(thing1.name);
 //		System.out.println(thing2.name);
+		
+		//System.out.println(Math.PI); //cannot be re-assigned it's a constant 
+		//System.out.println(Thing.LUCKY_NUMBER);
 		
 	}
 
