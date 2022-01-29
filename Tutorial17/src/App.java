@@ -1,6 +1,7 @@
 //GENERICS//
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class App {
 
@@ -15,5 +16,11 @@ public class App {
 		
 		System.out.println(animal);
 	}
-
+    ///// There can be more than one type argument////
+	
+	HashMap<Integer, String> map = new HashMap<Integer, String>();
+	
+	///// Java 7 style /////
+	
+	ArrayList<Integer> someList = new ArrayList<>();
 }
